@@ -12,25 +12,25 @@
                 <li class="list">
                     <a href="#">
                         <span class="icon">
-                        <ion-icon name="person-outline"></ion-icon>
+                        <ion-icon name="filter-circle-outline"></ion-icon>
                     </span>
-                        <span class="text">Profile</span>
+                        <span class="text">Filter</span>
                     </a>
                 </li>
                 <li class="list">
                     <a href="#">
                         <span class="icon">
-                        <ion-icon name="chatbubble-outline"></ion-icon>
+                        <ion-icon name="help-circle-outline"></ion-icon>
                     </span>
-                        <span class="text">Messages</span>
+                        <span class="text">About</span>
                     </a>
                 </li>
                 <li class="list">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="camera-outline"></ion-icon>
+                            <ion-icon name="cart-outline"></ion-icon>
                         </span>
-                        <span class="text">Photos</span>
+                        <span class="text">Shopping-cart</span>
                     </a>
                 </li>
                 <li class="list">

@@ -11,8 +11,16 @@ function getObject (array $objectArray):void
                </div>
                <div class="buttons">
                    <img class="button köp" src="assets/köp.png">
+                   <ion-icon name="backspace-outline"></ion-icon>
                </div>
            </div><?php
    }
 };
-
+function create_logo(){
+   return'<img class="logo" src="assets/ha.png" />';   
+}
+function create_copyright(){
+    $year = date('Y');
+    $message = '&copy; '.$year;
+    return $message;
+}

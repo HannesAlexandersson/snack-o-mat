@@ -1,9 +1,8 @@
 </body>
         <footer>
             <div class="footer-container">            
-                <h3>Social Media:</h3>
-                <p>Insta: </p>
-                <p>Meta:</p>                           
+                <?= create_logo() ?>
+                <?= create_copyright() ?>
             </div>        
         </footer>
     </body>

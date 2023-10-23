@@ -11,19 +11,19 @@ $nutsArray =
     [
         'price' => 30,
         'allergic' => 'peanut',
-        'bild' => 'assets/Salted-almonds.jpg'        
+        'bild' => 'assets/Salted-almonds.png'        
     ],
     'Pistachios' =>
     [
         'price' => 30,
         'allergic' => 'peanut',
-        'bild' => 'assets/Pistagenötter.jpg'        
+        'bild' => 'assets/Pistagenötter.png'        
     ],
     'Cashews' =>
     [
         'price' => 30,
         'allergic' => 'peanut',
-        'bild' => 'assets/cashew-nuts.avif'        
+        'bild' => 'assets/cashew-nuts.png'        
     ]
 ];
 
@@ -61,27 +61,27 @@ $sauceArray =
     'Garlic' =>
     [
         'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/garlic-sauce.jpg'
-    ],
+        'matrial' => '',
+        'bild' => 'assets/garlic.png'
+     ],
     'bea' =>
     [
         'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/bea-sauce.jpg'
+        'matrial' => '',
+        'bild' => 'assets/bea.png'
     ],
-    'curry-vinegar' =>
+    'curry' =>
     [
         'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/curryVinegar-sauce.jpg'
+        'matrial' => '',
+        'bild' => 'assets/curry.png'
     ],
     'Hot' =>
     [
         'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/Hot-sauce.jpg'
-    ]    
+        'matrial' => '',
+        'bild' => 'assets/hot-sauce.png'
+    ]
 ];
 
 $crackersArray = 
@@ -99,7 +99,99 @@ $crackersArray =
         'bild' => 'assets/crackers-peanut.png'
     ]
 ];
-// array containing the different snacks
+
+
+// beverage array containing the diffrent beverages
+$sparklingArray =     
+[
+    'Coco-cool' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/coco-cool.png'
+    ],
+    'Fonto' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/fonto.png'
+    ],
+    'Popsi' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/popsi.png'
+    ],
+];
+
+$stillArray = 
+[
+    
+    
+    'Orango' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/orango.png'
+    ],
+    'Appleoppo' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/appleoppo.png'
+    ],
+    'Peach' =>
+    [
+        'pris' => 100,
+        'matrial' => '',
+        'bild' => 'assets/peach.png'
+    ]
+    
+];
+$sparklingDrinks = 
+[
+    'Coco-cool' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Fanto' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Pepso' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+];
+$stillDrinks = 
+[
+    'Orango' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Appleoppo' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Peach' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ]
+];
+
+/* // en array med alla objects, för att kunna plocka rrandom till prefab packs
 $objectArray = [
     'Nuts' =>
     [
@@ -197,93 +289,4 @@ $objectArray = [
             'bild' => 'assets/peanutButter-crackers.jpg'
         ]
     ]
-];
-
-// beverage array containing the diffrent beverages
-$beverageArray = 
-[
-    'sparkling' =>
-    [
-        'Coco-cool' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ],
-        'Fanto' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ],
-        'Pepso' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ],
-    ],
-    'still' =>
-    [
-        'Orango' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ],
-        'Appleoppo' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ],
-        'Peach' =>
-        [
-            'pris' => 100,
-            'matrial' => '',
-            'bild' => 'assets/cheese-crackers.jpg'
-        ]
-    ]
-];
-$sparklingDrinks = 
-[
-    'Coco-cool' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ],
-    'Fanto' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ],
-    'Pepso' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ],
-];
-$stillDrinks = 
-[
-    'Orango' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ],
-    'Appleoppo' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ],
-    'Peach' =>
-    [
-        'pris' => 100,
-        'allergic' => '',
-        'bild' => 'assets/cheese-crackers.jpg'
-    ]
-];
+]; */
