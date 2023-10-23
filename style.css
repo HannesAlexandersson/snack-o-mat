@@ -8,13 +8,16 @@
 }
 
 :root {
-  --clr: #222327;
+  --baseclr: #222327;
+  --acntclr: #646771;
+  --highclr: #393831;
+  --exthighclr: #A7A491;
 }
 
 body {
     display: flex;
     min-height: 100vh;
-    background: var(--clr);
+    background: var(--baseclr);
     flex-direction: column;
     align-items: center;
 }
@@ -68,7 +71,7 @@ header {
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
-  color: var(--clr);
+  color: var(--baseclr);
 }
 
 .navigation ul li.active a .icon {
@@ -77,7 +80,7 @@ header {
 
 .navigation ul li a .text {
   position: absolute;
-  color: var(--clr);
+  color: var(--baseclr);
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;
@@ -98,7 +101,7 @@ header {
   height: 70px;
   background: #29fd53;
   border-radius: 50%;
-  border: 6px solid var(--clr);
+  border: 6px solid var(--baseclr);
   transition: 0.5s;
 }
 
@@ -111,7 +114,7 @@ header {
   height: 20px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
+  box-shadow: 1px -10px 0 0 var(--baseclr);
 }
 
 .indicator::after {
@@ -123,7 +126,7 @@ header {
   height: 20px;
   background: transparent;
   border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 var(--clr);
+  box-shadow: -1px -10px 0 0 var(--baseclr);
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator {
@@ -140,4 +143,59 @@ header {
 }
 .navigation ul li:nth-child(5).active ~ .indicator {
     transform: translateX(calc(70px * 6.28));
+}
+
+.button {
+  display: block;
+  border-radius: 16px;
+  width: 4rem;
+}
+.button:hover {
+  animation: shaking 0.5s infinite;
+}
+main {  
+  gap: 10rem;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  color: white;
+  flex-direction: column;
+}
+.main-items {
+  padding: 1rem;
+  border-radius: 16px;
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  box-shadow: 11px 9px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--exthighclr);
+  align-items: center;
+}
+.card-content {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.main-items>p{
+  width: calc( 45% - 1rem);
+}
+.main-container {
+  border-radius: 16px;
+  border: 2px solid var(--acntclr);
+  margin: 0 auto;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image {
+  width: 31%;
+}
+.long {/*
+  max-height: 7rem;
+  width: 41%;*/
 }

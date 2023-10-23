@@ -1,4 +1,104 @@
 <?php
+$nutsArray =  
+[
+    'Roasted-peanuts' =>
+    [
+        'price' => 30,
+        'allergic' => 'peanut',
+        'bild' => 'assets/Roasted-Peanuts.png'       
+    ],
+    'Roasted-almonds' =>
+    [
+        'price' => 30,
+        'allergic' => 'peanut',
+        'bild' => 'assets/Salted-almonds.jpg'        
+    ],
+    'Pistachios' =>
+    [
+        'price' => 30,
+        'allergic' => 'peanut',
+        'bild' => 'assets/Pistagenötter.jpg'        
+    ],
+    'Cashews' =>
+    [
+        'price' => 30,
+        'allergic' => 'peanut',
+        'bild' => 'assets/cashew-nuts.avif'        
+    ]
+];
+
+$crispArray = 
+[      
+    'Ranch' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/Estrella-Ranch.png'
+    ],
+    'Vinegar' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/vinegar.png'
+    ],
+    'Sourcream' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/sourcreame.png'
+     ],
+    'Hot' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/hot.png'
+    ]    
+];
+
+$sauceArray = 
+    
+[   
+    'Garlic' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/garlic-sauce.jpg'
+    ],
+    'bea' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/bea-sauce.jpg'
+    ],
+    'curry-vinegar' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/curryVinegar-sauce.jpg'
+    ],
+    'Hot' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/Hot-sauce.jpg'
+    ]    
+];
+
+$crackersArray = 
+[
+    'Cheese-crackers' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/crackers-cheese.png'
+    ],
+    'PeanutButter-crackers' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/crackers-peanut.png'
+    ]
+];
 // array containing the different snacks
 $objectArray = [
     'Nuts' =>
@@ -33,26 +133,26 @@ $objectArray = [
         'Ranch' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
-            'bild' => 'assets/Ranch-crips.jpg'
+            'matrial' => '',
+            'bild' => 'assets/Estrella-Ranch.png'
         ],
         'Vinegar' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
-            'bild' => 'assets/Vinegar-crisps.jpg'
+            'matrial' => '',
+            'bild' => 'assets/vinegar.png'
         ],
         'Sourcream' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
-            'bild' => 'assets/Sourcreame-crisps.jpg'
+            'matrial' => '',
+            'bild' => 'assets/sourcreame.png'
         ],
         'Hot' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
-            'bild' => 'assets/Hot-crisps.jpg'
+            'matrial' => '',
+            'bild' => 'assets/hot.png'
         ]
     ],
     'Dip-sauce' =>
@@ -60,25 +160,25 @@ $objectArray = [
         'Garlic' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/garlic-sauce.jpg'
         ],
         'bea' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/bea-sauce.jpg'
         ],
         'curry-vinegar' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/curryVinegar-sauce.jpg'
         ],
         'Hot' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/Hot-sauce.jpg'
         ]
     ],
@@ -87,13 +187,13 @@ $objectArray = [
         'Cheese-crackers' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
         'PeanutButter-crackers' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/peanutButter-crackers.jpg'
         ]
     ]
@@ -107,19 +207,19 @@ $beverageArray =
         'Coco-cool' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
         'Fanto' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
         'Pepso' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
     ],
@@ -128,20 +228,62 @@ $beverageArray =
         'Orango' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
         'Appleoppo' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ],
         'Peach' =>
         [
             'pris' => 100,
-            'matrial' => 'ylle',
+            'matrial' => '',
             'bild' => 'assets/cheese-crackers.jpg'
         ]
+    ]
+];
+$sparklingDrinks = 
+[
+    'Coco-cool' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Fanto' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Pepso' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+];
+$stillDrinks = 
+[
+    'Orango' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Appleoppo' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
+    ],
+    'Peach' =>
+    [
+        'pris' => 100,
+        'allergic' => '',
+        'bild' => 'assets/cheese-crackers.jpg'
     ]
 ];
