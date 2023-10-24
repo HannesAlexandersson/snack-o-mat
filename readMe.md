@@ -8,3 +8,4 @@ For the navigation bar, I'm drawing inspiration from a tutorial on YouTube.
 ### dag2 
 struggling really hard with getting the "add to cart" function to work properly. Finally I got it right. Experimenting with sessions to see if I can get the page to allow the user to add multiple products to the cart. Now I have a big decision to make. either I scrap the fancy navbar since I cant make it work properly between pages of the website or I dig my head in and continue to waste time on trying to make it work. 
 Fixed an rudementirary filter function
+Also worked on accesability. trying to make sure it works properly on all screens. But the way the navbar is constructed made it hard. So instead I removed the navbar for small screens and only kept the icons. 
