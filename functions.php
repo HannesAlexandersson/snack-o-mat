@@ -14,28 +14,31 @@ function getObject (array $objectArray):void
                 </div>
                </div>
                <div class="buttons">
-                <form action="logic.php" method="post"> 
+                <form action="shop.php" method="post"> 
                     <input type="hidden" name="id" value="<?=$data['id']?>"> 
                     <input type="hidden" name="price" value="<?= $data['price'] ?>">                  
                     <input class="button köp <?=$data['id']?>" type="submit" value="Köp" name="<?=$data['id']?>">
                 </form>
-                <form action="logic.php" method="post">
+                <form action="shop.php" method="post">
                     <input type="submit" name="clear_cart" value="Clear Cart">
                 </form>                   
                </div>
            </div><?php 
    }
 };
-function create_logo(){
+function create_logo():string
+{
    return'<img class="logo" src="assets/ha.png" />';   
 }
-function create_copyright(){
+function create_copyright():string
+{
     $year = date('Y');
     $message = '&copy; '.$year;
     return $message;
 }
-//array(1) { [0]=> array(2) { ["product"]=> string(5) "Peach" ["price"]=> int(30) } }
-function getCart(array $userCart){
+
+function getCart(array $userCart):void
+{
     $totalPrice = 0;
     ?>
     <div>
@@ -54,7 +57,7 @@ function getCart(array $userCart){
     <div>
         <p>Full Price: <?= $totalPrice ?> kr</p>
     </div>
-    <form action="logic.php" method="post">
+    <form action="shop.php" method="post">
         <input type="submit" name="clear_cart" value="Check-out">
     </form>                   
     <?php
@@ -68,13 +71,13 @@ function sortArray(array $objectArray, array $selectedCheckboxes): array
         
         foreach ($items as $itemName => $itemData) {
             if (in_array($itemData['allergic'], $selectedCheckboxes)) {
-                // If the 'allergic' value is in the selected checkboxes, keep the item
+               
                 $filteredItems[$itemName] = $itemData;
             }
         }
 
         if (!empty($filteredItems)) {
-            // If there are filtered items in this category, add them to the filtered array
+            
             $filteredArray[$category] = $filteredItems;
         }
     }

@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $filteredArray = sortArray($objectArray, $selectedCheckboxes);    
 }
-
+// hade problem med att få till filtreringen. Det slutade med att den blev 'inverterad' dvs att användaren får filtrera det de vill ha istället för att filtrera bort det de inte vill ha
 ?>
 <main>
     <div class="main-container">

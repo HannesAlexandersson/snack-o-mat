@@ -47,18 +47,18 @@ session_start();?>
             </ul>
         </div>
         <script>
-            const list = document.querySelectorAll('.list');
-            function setActiveLink(){
+            const list = document.querySelectorAll('.list');//sparar  classnamn list i variabel
+            function setActiveLink(){//funktion för att visuellt presentera användarens aktuella val
                 list.forEach((item) =>
                 item.classList.remove('active'));
-                list.forEach((item) => {
+                list.forEach((item) => {// för att inte indikatorn ska gå tillbaka till "home" varje gång användaren reloadar sidan eller byter page
                     if (window.location.href.includes(item.querySelector('a').getAttribute('href'))) {
                     item.classList.add('active');
                     }
                 });                
             }
             list.forEach((item) =>
-            item.addEventListener('click',setActiveLink));
+            item.addEventListener('click',setActiveLink));// sätter den icon som användaren klickat på som aktuell active, dvs indikatorn kommer ställa sig där
             setActiveLink();
         </script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

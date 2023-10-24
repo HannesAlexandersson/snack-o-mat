@@ -4,8 +4,7 @@ __DIR__. require 'head.php' ;
 if (isset($_POST['id'])) {
     $userChoice = $_POST['id'];
     $itemPrice = (int)$_POST['price'];
-    array_push($userCart,['product' =>$userChoice,'price' => $itemPrice]); //push they products into the array of the usercart  
-    var_dump($userCart);
+    array_push($userCart,['product' =>$userChoice,'price' => $itemPrice]); //push they products into the array of the usercart     
 }
 if (isset($_POST['clear_cart'])) {
     $userCart = []; // Clear the cart when the "Clear Cart" button is clicked
@@ -22,6 +21,7 @@ if (isset($_POST['clear_cart'])) {
         </div>
         <?php } ?>    
 </main>
+<br>
 <div class="cart-container main-container" id="cart">
         <div class="cart-container">
             <?php getCart($userCart)?>
