@@ -5,7 +5,8 @@ session_start();?>
     <head>
         <meta charset="UTF-8" />        
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="Stylesheet" href="style.css"/>        
+        <link rel="Stylesheet" href="style.css"/> 
+        <link href='https://fonts.googleapis.com/css?family=Sacramento:400' rel='stylesheet' type='text/css'>       
         <title>Snack-o-Mat</title>   
         <?php //eftersom alla sidorna på sajten använder samma head så requiras nödvändiga filer här så att alla får åtkomst till dem alltid
         __DIR__. require 'object-array.php';

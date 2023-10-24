@@ -1,4 +1,5 @@
-<main>
+<main>    
+    <h1 class="neonText">Snack-O-matic</h1>    
     <div class="main-container about">
         <h4>Welcome to Snack-O-Matic</h4>
         <hr style="width: 91%;">
