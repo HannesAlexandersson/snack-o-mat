@@ -4,7 +4,7 @@ session_start();?>
 <div class="navigation">
             <ul>
                 <li class="list active">
-                    <a href="index.php">
+                    <a class="small-device" href="index.php">
                         <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -12,7 +12,7 @@ session_start();?>
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#">
+                    <a href="filter.php">
                         <span class="icon">
                         <ion-icon name="filter-circle-outline"></ion-icon>
                     </span>

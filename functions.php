@@ -58,4 +58,34 @@ function getCart(array $userCart){
         <input type="submit" name="clear_cart" value="Check-out">
     </form>                   
     <?php
-}
+};
+function sortArray(array $objectArray, array $selectedCheckboxes): array
+{
+    $filteredArray = [];
+
+    foreach ($objectArray as $category => $items) {
+        $filteredItems = [];
+        
+        foreach ($items as $itemName => $itemData) {
+            if (in_array($itemData['allergic'], $selectedCheckboxes)) {
+                // If the 'allergic' value is in the selected checkboxes, keep the item
+                $filteredItems[$itemName] = $itemData;
+            }
+        }
+
+        if (!empty($filteredItems)) {
+            // If there are filtered items in this category, add them to the filtered array
+            $filteredArray[$category] = $filteredItems;
+        }
+    }
+
+    return $filteredArray;
+};
+function getErrors(array $errors):void
+{
+    foreach($errors as $error){?>
+    <div class="alert">
+        <?=$error?>
+    </div><?php
+    }
+};

@@ -14,7 +14,7 @@ if (isset($_POST['clear_cart'])) {
 <main>
     <?php foreach($objectArray as $category => $items) { ?>
         <div class="main-container">
-            <p style="margin-bottom: -0.5rem; padding-top: 0.5rem;"><?= $category ?></p>
+            <h5 style="margin-bottom: -0.5rem; padding-top: 0.5rem;"><?= $category ?></h5>
             <hr style="width: 91%;">
             <div class="card-container">            
                 <?php getObject($items)?>                

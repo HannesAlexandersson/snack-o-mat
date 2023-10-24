@@ -1,6 +1,6 @@
 <main>
-    <div class="main-container">
-    <h4>Welcome to Snack-O-Matic</h4>
+    <div class="main-container about">
+        <h4>Welcome to Snack-O-Matic</h4>
         <hr style="width: 91%;">
         <p>Welcome to Snack-o-matic, where we embrace snack enthusiasts of all kinds! Whether you've survived a long week and need some Friday night relaxation or simply crave a quick and tasty bite, you've come to the right place!</p>
         <p>Explore our treasure trove of snacks with a diverse selection that caters to every craving. Best of all, we've got snacks that won't break the bank!</p>
