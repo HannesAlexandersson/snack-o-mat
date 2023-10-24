@@ -191,6 +191,7 @@ main {
   background-color: var(--exthighclr);
   align-items: center;
   color: var(--baseclr);
+  justify-content: space-between;
 }
 .card-content {
   gap: 1rem;
@@ -233,4 +234,13 @@ main {
 }
 .logo{
   width: 10%;
+}
+.cart-container {
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,8 +1,16 @@
 <?php
-__DIR__ . require 'object-array.php';
+session_start();
 __DIR__. require 'head.php' ;
-
-__DIR__. require 'header.php' ;?>
+if (isset($_POST['id'])) {
+    $userChoice = $_POST['id'];
+    $itemPrice = (int)$_POST['price'];
+    array_push($userCart,['product' =>$userChoice,'price' => $itemPrice]); //push they products into the array of the usercart  
+    var_dump($userCart);
+}
+if (isset($_POST['clear_cart'])) {
+    $userCart = []; // Clear the cart when the "Clear Cart" button is clicked
+}
+?>
 <main>
     <div class="main-container nuts">
         <p style="
@@ -64,7 +72,12 @@ __DIR__. require 'header.php' ;?>
     getObject($stillArray)?>
     </div>
 </div>
+<div class="cart-container main-container" id="cart">
+        <div class="cart-container">
+            <?php getCart($userCart)?>
+        </div>
+    </div>
 </main>
 <?php
-        __DIR__. require 'footer.php';
+__DIR__. require 'footer.php';
 ?>

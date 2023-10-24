@@ -30,15 +30,15 @@
                         <span class="icon">
                             <ion-icon name="cart-outline"></ion-icon>
                         </span>
-                        <span class="text">Shopping-cart</span>
+                        <span class="text">Shopp</span>
                     </a>
                 </li>
                 <li class="list">
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="settings-outline"></ion-icon>
+                        <ion-icon name="basket-outline"></ion-icon>
                         </span>
-                        <span class="text">Settings</span>
+                        <span class="text">cart</span>
                     </a>
                 </li>
                 <div class="indicator"></div>
