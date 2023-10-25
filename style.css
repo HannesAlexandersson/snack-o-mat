@@ -194,7 +194,7 @@ main {
   justify-content: space-between;
 }
 .main-items:hover{
-  transform: scale(0.9);
+  transform: scale(1.2);
   
 }
 .card-content {
@@ -408,4 +408,9 @@ h1 {
   color: var(--baseclr);
   justify-content: space-between;
 }
+}
+.prefab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

@@ -2,6 +2,8 @@
 session_start();
 __DIR__. require 'head.php';
 $errors = [];
+$prefab = [];
+$prefab = getRandom($objectArray);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!isset($_POST["checkboxes"])) {
         $error = 'Holy guacemoly! The checkboxes are empty!';
@@ -46,6 +48,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div><?php 
     }?>
+     <div class="main-container">
+        <h3>OR TRY THIS</h3>
+            <h5 style="margin-bottom: -0.5rem; padding-top: 0.5rem;">Pig in sack offers: 100kr</h5>
+            <hr style="width: 91%;">
+            <div class="card-container">            
+                <?php displayRandom($objectArray,$prefab)?> 
+                <div class="buttons prefab">
+                <form action="shop.php" method="post">
+                    <input type="hidden" name="id" value="<?= $preFab_ID?>">
+                    <input type="hidden" name="price" value="<?= $packPrice?>">
+                    <input class="button köp <?= $preFab_ID?>" type="submit" value="Köp" name="<?= $preFab_ID?>">
+                </form>
+                <form action="shop.php" method="post">
+                    <input type="submit" name="clear_cart" value="Clear Cart">
+                </form>
+            </div>               
+            </div>
+        </div>               
 </main>
 <?php
 __DIR__. require 'footer.php';

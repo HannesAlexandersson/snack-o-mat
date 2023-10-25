@@ -4,8 +4,18 @@ session_start();
 if (!isset($_SESSION['userCart'])) {
     $_SESSION['userCart'] = [];//superglobal variable för att kunna användas i alla scoop och alla sessions
 }
-
 $userCart = &$_SESSION['userCart']; // omvandla till referens för enklare hantering
+
+if ( !isset($_SESSION['packPrice'])){
+    $_SESSION['packPrice'] = 100;
+}
+$packPrice = &$_SESSION['packPrice'];
+
+if ( !isset($_SESSION['preFab'])){
+    $_SESSION['preFab'] = 'preFab';
+}
+$preFab_ID = &$_SESSION['preFab'];
+
 
  $objectArray = 
 [
