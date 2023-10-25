@@ -92,3 +92,7 @@ function getErrors(array $errors):void
     </div><?php
     }
 };
+function getRandom(array $objectArray)
+{
+    
+}
