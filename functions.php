@@ -100,31 +100,6 @@ function getRandom(array $objectArray): array
     array_push($randomPackArray2, array_rand($randomPackArray1, 5));
     return $randomPackArray2;
 };
-
-/* 
-function displayRandom(array $objectArray, array $prefab){
-
-    $count = 0;
-    foreach($objectArray as $object){    
-        for ($i=0; $i < 5; $i++) { 
-            if ($count >= 5){break;}else {?>
-                <div class="main-items"><?= $prefab[0][$i] ?>
-                        <div class="card-content">
-                            <div class="image-content">
-                                <img class="image long" src="<?= $object[$prefab[0][$i]]['bild'] ?>">
-                            </div>
-                            <div class="card-info">                    
-                                <p>Allergenics:<?= $object[$prefab[0][$i]]['allergic'] ?></p>
-                            </div>
-                        </div>                        
-                    </div><?php
-                    $count++;
-            }
-        }
-    }
-}
-  */
-
 function displayRandom(array $objectArray, array $prefab) {
     $count = 0;
     

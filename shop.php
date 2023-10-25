@@ -4,10 +4,10 @@ __DIR__. require 'head.php' ;
 if (isset($_POST['id'])) {
     $userChoice = $_POST['id'];
     $itemPrice = (int)$_POST['price'];
-    array_push($userCart,['product' =>$userChoice,'price' => $itemPrice]); //push they products into the array of the usercart     
+    array_push($userCart,['product' =>$userChoice,'price' => $itemPrice]); 
 }
 if (isset($_POST['clear_cart'])) {
-    $userCart = []; // Clear the cart when the "Clear Cart" button is clicked
+    $userCart = []; 
 }
 ?>
 <main>
