@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-function getObject(array $objectArray): void
+function getObject(array $objectArray): void // function to display the items in the shop. It divedes the array into the different categories and then displays the items in the category
 {
     foreach ($objectArray as $object => $data) { ?>
         <div class="main-items"><?= $object ?>
@@ -28,7 +28,7 @@ function getObject(array $objectArray): void
 };
 function create_logo(): string
 {
-    return '<img class="logo" src="assets/ha.png" />';
+    return '<img class="logo" src="assets/ha.png" />'; // for some reason it wont let me separate html and php!
 };
 function create_copyright(): string
 {
@@ -37,7 +37,7 @@ function create_copyright(): string
     return $message;
 };
 
-function getCart(array $userCart): void
+function getCart(array $userCart): void // function to display the cart
 {
     $totalPrice = 0;?>
     <div>
@@ -56,7 +56,7 @@ function getCart(array $userCart): void
         <input type="submit" name="clear_cart" value="Check-out">
     </form><?php
 };
-function sortArray(array $objectArray, array $selectedCheckboxes): array
+function sortArray(array $objectArray, array $selectedCheckboxes): array // sorting algorithm for the checkboxes, to sort out the items that are not selected
 {
     $filteredArray = [];
 
@@ -78,7 +78,7 @@ function sortArray(array $objectArray, array $selectedCheckboxes): array
 
     return $filteredArray;
 };
-function getErrors(array $errors): void
+function getErrors(array $errors): void //function to display errors
 {
     foreach ($errors as $error) { ?>
     <div class="alert">
@@ -86,10 +86,10 @@ function getErrors(array $errors): void
     </div><?php
     }
 };
-function getRandom(array $objectArray): array
+function getRandom(array $objectArray): array // gets random items from the array
 {
-    $randomPackArray1 = [];
-    $randomPackArray2 = [];
+    $randomPackArray1 = []; // stores the random items
+    $randomPackArray2 = []; // stores the random items, If in the future we want to have more than 2 random pack we should probably think of better names
 
     foreach ($objectArray as $objects) {
         foreach ($objects as $items => $data) {
@@ -100,15 +100,15 @@ function getRandom(array $objectArray): array
     array_push($randomPackArray2, array_rand($randomPackArray1, 5));
     return $randomPackArray2;
 };
-function displayRandom(array $objectArray, array $prefab) {
+function displayRandom(array $objectArray, array $prefab) {// function to genereate random prefab baskets
     $count = 0;
     
-    foreach ($prefab[0] as $productName) {
+    foreach ($prefab[0] as $productName) { // Max 5 items for each prefab basket
         if ($count >= 5) {
             break;
         }
         
-        foreach ($objectArray as $category => $objects) {
+        foreach ($objectArray as $category => $objects) {// create the prefab basket into html entities
             if (isset($objects[$productName])) {
                 $data = $objects[$productName];?>
                 
